@@ -1,0 +1,15 @@
+.page-about .section-main {
+  aside {
+    background-image: url(assets/img/AB.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    @media screen and (min-width: 1201px) {min-height: 1064px;}
+    @media screen and (max-width: 1200px) {background-size: contain;}
+    @media screen and (max-width: 980px) {
+      padding-bottom: 0;
+      width: 100%;
+
+      .socials {display: none;}
+    }
+  }//aside
+}//.page-about

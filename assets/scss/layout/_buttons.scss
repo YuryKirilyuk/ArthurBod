@@ -1,0 +1,57 @@
+.btn {
+
+}
+.link {
+
+}
+
+
+//MOBILE MENU BUTTON
+.btn-toggle {
+  background: none;
+  border: none;
+  display: block;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  height: 7rem;
+  width: 7rem;
+  @media screen and (max-width: 580px) {
+    height: 5rem;
+    width: 5rem;
+  }
+  &:hover .navigation-icon:before {top: -1rem;}
+  &:hover .navigation-icon:after {top: 1rem;}
+  &.active .navigation-icon {
+    background-color: transparent;
+    &:before {
+      top: 0;
+      transform: rotate(135deg);
+    }
+    &:after {
+      top: 0;
+      transform: rotate(-135deg);
+    }
+  }
+}//.menu-toggle
+
+.navigation-icon {
+  position: relative;
+  &,
+  &:before,
+  &:after {
+    background-color: #2e2c2c;
+    display: inline-block;
+    height: 2px;
+    width: 3.5rem;
+  }
+  &:before,
+  &:after {
+    content: "";
+    left: 0;
+    position: absolute;
+    transition: $default-transition;
+  }
+  &:before {top: -.7rem;}
+  &:after {top: .7rem;}
+}//.navigation-icon

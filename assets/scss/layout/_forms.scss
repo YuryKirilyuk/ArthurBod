@@ -1,0 +1,43 @@
+.contact-form {
+  margin-bottom: 30px;
+  max-width: 470px;
+  width: 100%;
+  @media screen and (min-width: 768px) {margin-right: 20px;}
+
+  .wpcf7 {margin-top: 40px;}
+
+  input:not([type="submit"]),
+  textarea {
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 18px;
+    width: 100%;
+    @include placeholder {
+      color: #0a0a0a;
+    }
+  }
+  input {
+    height: 45px;
+    line-height: 45px;
+    &[type="submit"] {
+      background: transparent;
+      border: 2px solid #fff;
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 18px;
+      padding: 0;
+      text-transform: uppercase;
+      transition: $default-transition;
+      width: 147px;
+      &:hover {
+        background: #fff;
+        color: $black;
+      }
+    }
+  }
+  textarea {padding: 20px;}
+}//.contact-form

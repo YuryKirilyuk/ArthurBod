@@ -1,0 +1,28 @@
+.page-contact {
+  .section-hero .section-main aside {
+    padding-bottom: 0;
+    @media screen and (max-width: 980px) {width: 100%;}
+
+    .image {
+      margin-top: 60px;
+      img {
+        display: block;
+        opacity: .45;
+      }
+      @media screen and (max-width: 1360px) {
+        bottom: 0;
+        position: absolute;
+      }
+    }//.image
+
+  }//.section-hero .section-main aside
+
+  .page-content .socials {
+    p {margin-bottom: 40px;}
+    a {
+      &:not(:last-child) {margin-right: 30px;}
+      &:hover {opacity: .5;}
+    }
+  }
+
+}//.page-contact
