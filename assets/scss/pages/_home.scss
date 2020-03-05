@@ -56,6 +56,10 @@
       @media screen and (max-width: 1440px) {width: 40%;}
       @media screen and (max-width: 1200px) {font-size: 22px;}
       @media screen and (max-width: 980px) {padding-top: 45px;}
+      @media screen and (max-width: 475px) {
+        font-size: 18px;
+        padding-top: 20px;
+      }
 
       .name {
         color: #fff;
@@ -65,6 +69,7 @@
         line-height: 1;
         @media screen and (max-width: 1440px) {margin-top: 40px;}
         @media screen and (max-width: 550px) {font-size: 40px;}
+        @media screen and (max-width: 475px) {font-size: 30px;}
       }
       .subtitle {
         color: #fff;
@@ -72,6 +77,7 @@
         font-weight: 300;
         margin-bottom: 20px;
         @media screen and (max-width: 550px) {font-size: 28px;}
+        @media screen and (max-width: 475px) {font-size: 18px;}
       }
 
       .socials {
@@ -134,6 +140,7 @@
           margin: auto;
           text-align: center;
         }
+        @media screen and (max-width: 475px) {font-size: 24px;}
         &:before,
         &:after {
           background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAAA4CAYAAADth5acAAADoElEQVR4nO1b7XETMRTcpAFMBZgKCBVgOkgHuANcgtNBUgFxB0kFkA5IBeAOcAVm5DllLp6TTu9D+4YZ9p899undrVZv35Pu4ng8IgALAL8BvOk4xh2AjfEajDhvLjtevIZN5xtLuHW4BiPO+wglMGbXI4Br4zVocUYogTK7HK5xy1IrWwlLAL86j7EfxrGAGidbCVvCGB4qYMT5krOYSmDMroT3w1quxQrAd8d4SngL4A/ISmDMrkcjASDFucsEgKgE1uz6DOCH4f+sOD8C+Jk/sEhID+ZT5zE8EnJ6MB+c4inhGcDV+AvGcrQiEACH4mxNIABTcTKUwFABxolOiZRL3jnGM4XDUAS+Qm8lrEkE7IwErAkEoGSfeyuBMbtgTMiM9kTGpH3uqQTW7Ho2OiJGGyXhqWSfe5GwIPltGBPywqHd3YpinL1I2JBUkBLdg+H/W5IK9rU4e5DAnF0PhoScaoqvzvGUUO1n9SCBtcbCuBSxlkvMxelNwpKogqdx6S9Eqli/OMdTwqx99iaBtcbC2LL22PpsxWycnnUCq1WNUuXZCFaTDq39LE8lMNdYiwqYcTaN5aUE5uyCYeMmFZDfOsQzhcOggln35qUE5uwqVp4NYMbZbJ89SGC1qjO0SZXVRsloJtxjOWK1qmHYuGE26TCoddX6Y6sSWK3qDG1CZhaQkMZpVQKrVZ2hSchsFYjts0UJ7DVWe5KCWUBCk7O0SlgMLQMmCZqNG2YBmSFWq1YJrFZ1xl65ccO0pNCqVUMCs1WdobGlS2KTLkNlHDQksJ0GlDfncSZVgurGTQ1SEpit6gzNSQp2AQlLZ1ZKAttpQDmj2bkAFuVJSIhYYzUnKa4DVGA69yQhIWJ2aSTO3LBxGbOVhFWACjQnKdgFJAa1ardZT2glIUIF0pMUzLNOY5iV10JChNOA4ubYBSQczj2d0EJCxOySnqSIKCAxOCLLQeQT5kiIcBpQ2L2IAhJeJmCugcduVUPRCo5o0kG6cVNDTQkRTgMKFUQsl/C0wjUlRKgAwlZwlAo83o97QUkJ2yACpCcp2E26LuNOkRDlNCC8uSjrDAYJUU5jL7y5qFywc3hh/RXOSfivgnm4L4Hnifk+oEeUIUnIUabBNSFnjJUQ0arOkOzNRlln9OrQjkmIWmPxj+SCQy83lklgvrlyDsnebJR1hvH9uCoyCREbIRmtY0eaBvR8RpeDCqKcRkKrxFMuiLDOCZb34+oA8BdL9+qv4eNCNAAAAABJRU5ErkJggg==) no-repeat center;
@@ -197,6 +204,7 @@
       padding-bottom: 0;
       width: 100%;
     }
+    @media screen and (max-width: 475px) {font-size: 18px;}
 
     p {
       line-height: 2;
@@ -217,6 +225,7 @@
         @include placeholder {
           color: rgba(240, 239, 240, .4);
         }
+        @media screen and (max-width: 475px) {font-size: 20px;}
       }
       input[type="submit"] {
         background: transparent;
@@ -263,6 +272,7 @@
       margin: 0 0 20px;
       @media screen and (max-width: 1100px) {font-size: 70px;}
       @media screen and (max-width: 650px) {font-size: 50px;}
+      @media screen and (max-width: 475px) {font-size: 40px;}
     }
 
     .link {
@@ -272,6 +282,7 @@
       line-height: normal;
       padding-left: 50px;
       @media screen and (max-width: 1100px) {font-size: 22px;}
+      @media screen and (max-width: 475px) {font-size: 18px;}
       &:hover {
         color: #fff;
         background-position: 10px center;

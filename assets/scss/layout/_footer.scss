@@ -27,7 +27,9 @@
       opacity: .3;
       width: 28px;
       &:hover {opacity: 1;}
-      &.in {margin-left: 35px;}
+      &.in {
+        @media screen and (min-width: 475px) {margin-left: 35px;}
+      }
     }// a
 
   }//.socials

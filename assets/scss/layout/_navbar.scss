@@ -3,17 +3,26 @@
   bottom: 0;
   left: 0;
   padding-top: 85px;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 87px;
   z-index: 10;
   @media screen and (max-width: 980px) {padding-top: 45px;}
   @media screen and (max-width: 580px) {width: 50px;}
+  @media screen and (max-width: 475px) {padding-top: 20px;}
+
+  .admin-bar & {
+    padding-top: 117px;
+    @media screen and (max-width: 980px) {padding-top: 77px;}
+    @media screen and (max-width: 782px) {padding-top: 91px;}
+    @media screen and (max-width: 475px) {padding-top: 66px;}
+  }
 
 
 
   .cta {
     align-items: center;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     height: calc(100vh - 255px);
@@ -29,14 +38,15 @@
   .menu-container {
     background: #fff;
     height: 100%;
-    position: absolute;
     left: 100%;
+    max-width: 665px;
     opacity: 0;
-    padding: 85px 80px 0 80px;
+    overflow: auto;
+    padding: 85px 80px 30px 80px;
+    position: absolute;
     top: 0;
     transition: $default-transition;
     visibility: hidden;
-    max-width: 665px;
     width: calc(100vw - 104px);
     z-index: 1;
     @media screen and (max-width: 980px) {padding-top: 45px;}
@@ -45,10 +55,19 @@
       padding-right: 40px;
     }
     @media screen and (max-width: 580px) {width: calc(100vw - 67px);}
+    @media screen and (max-width: 475px) {
+      padding: 20px 20px 30px;
+      width: calc(100vw - 50px);
+    }
 
     &.show {
       opacity: 1;
       visibility: visible;
+    }
+
+    .admin-bar & {
+      padding-top: 117px;
+      @media screen and (max-width: 980px) {padding-top: 77px;}
     }
   }//.menu-container
 
@@ -89,6 +108,7 @@
     font-size: 24px;
     line-height: 1.25;
     padding-top: 45px;
+    @media screen and (max-width: 475px) {font-size: 18px;}
   }
 
   .subscribe {
@@ -101,11 +121,15 @@
       border-radius: 0;
       color: $black;
       font-size: 28px;
+      line-height: normal;
       max-width: 240px;
       padding: 7px 3px;
-      line-height: normal;
       @include placeholder {
         color: #7d7d7d;
+      }
+      @media screen and (max-width: 475px) {
+        font-size: 20px;
+        max-width: 100%;
       }
     }
     input[type="submit"] {
