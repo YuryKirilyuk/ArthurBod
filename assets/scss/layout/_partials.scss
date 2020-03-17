@@ -161,13 +161,18 @@ h3 {
       max-width: 195px;
       padding: 10px 15px;
       @media screen and (max-width: 580px) {padding: 10px 5px;}
-      @media screen and (max-width: 375px) {text-align: center;}
+      @media screen and (max-width: 350px) {
+        margin: 0 3px;
+        padding: 10px 3px;
+        text-align: center;
+      }
     }
   }
   a {
     color: #fff;
     font-size: 18px;
     &:hover {opacity: .5;}
+    @media screen and (max-width: 375px) {font-size: 15px;}
   }
   p {
     color: rgba(255,255,255,.7);
@@ -178,3 +183,6 @@ h3 {
   span {display: none;}
 
 }//.custom-menu
+
+
+.socials .fb {display: none;}

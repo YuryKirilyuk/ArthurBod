@@ -5,13 +5,13 @@
   @media screen and (max-width: 1300px) {background-size: cover;}
   @media screen and (max-width: 980px) {
     padding-bottom: 250px;
-
     .short-info {
       margin-bottom: 50px;
       order: 2;
     }
     .socials {display: none;}
   }
+  @media screen and (max-width: 375px) {background-position: 90%;}
 
   aside {
     padding-right: 6.35%;

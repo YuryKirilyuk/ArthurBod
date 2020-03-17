@@ -52,8 +52,8 @@
             </div><!-- .track-list -->
 
             <div class="contact">
-                <p>+ Send me updates on<br>
-                    “Water From The Moon”</p>
+                <p>Hey Arthur, I dig your stuff...<br>
+                    Update me about new music!</p>
                 <?php echo do_shortcode( '[contact-form-7 id="12" title="Subscribe" html_class="subscribe"]' ); ?>
             </div>
 

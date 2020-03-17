@@ -22,12 +22,12 @@ get_header(); ?>
                             </li>
                             <li>
                                 <a href="<?php echo get_site_url(); ?>/notes/">Notes</a>
-                                <p>Arthur Bod’s music can be defined simply as</p>
+                                <p>A little music blog and song liner-notes</p>
                                 <span>02</span>
                             </li>
                             <li>
                                 <a href="<?php echo get_site_url(); ?>/contact/">Contact</a>
-                                <p>Arthur Bod’s music can be defined simply as</p>
+                                <p>Just in case you wanna talk to me</p>
                                 <span>03</span>
                             </li>
                         </ul>
@@ -75,12 +75,12 @@ get_header(); ?>
                             </li>
                             <li>
                                 <a href="<?php echo get_site_url(); ?>/notes/">Notes</a>
-                                <p>Arthur Bod’s music can be defined simply as</p>
+                                <p>A little music blog and song liner-notes</p>
                                 <span>02</span>
                             </li>
                             <li>
                                 <a href="<?php echo get_site_url(); ?>/contact/">Contact</a>
-                                <p>Arthur Bod’s music can be defined simply as</p>
+                                <p>Just in case you wanna talk to me</p>
                                 <span>03</span>
                             </li>
                         </ul>
