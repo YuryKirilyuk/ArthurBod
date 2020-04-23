@@ -16,11 +16,20 @@ get_header();
 
             <div class="section-main">
                 <aside>
-                    <div class="logo">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">AB</a>
+
+                    <nav class="custom-menu mobile">
+                        <?php echo do_shortcode( '[customMenu]' ); ?>
+                    </nav>
+
+                    <div class="site-info">
+                        <div class="logo">
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">AB</a>
+                        </div>
+                        <div class="author">
+                            <h1 class="name"><?php bloginfo('name'); ?></h1>
+                            <p class="subtitle"><?php bloginfo('description'); ?></p>
+                        </div>
                     </div>
-                    <h1 class="name"><?php bloginfo('name'); ?></h1>
-                    <p class="subtitle"><?php bloginfo('description'); ?></p>
 
                     <ul class="articles-list">
                         <?php $loop = new WP_Query( array(  'post_type' => 'post',
@@ -48,23 +57,9 @@ get_header();
                 <div class="page-content">
 
                     <nav class="custom-menu">
-                        <ul>
-                            <li>
-                                <a href="<?php echo get_site_url(); ?>/about/">About Arthur</a>
-                                <p>Arthur Bod’s music can be defined simply as</p>
-                                <span>01</span>
-                            </li>
-                            <li>
-                                <a href="<?php echo get_site_url(); ?>/notes/">Notes</a>
-                                <p>Arthur Bod’s music can be defined simply as</p>
-                                <span>02</span>
-                            </li>
-                            <li>
-                                <a href="<?php echo get_site_url(); ?>/contact/">Contact</a>
-                                <p>Arthur Bod’s music can be defined simply as</p>
-                                <span>03</span>
-                            </li>
-                        </ul>
+
+                        <?php echo do_shortcode( '[customMenu]' ); ?>
+
                     </nav>
 
                     <div class="content">

@@ -205,3 +205,32 @@ function wpdocs_custom_excerpt_length( $length ) {
     return 20;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+
+// Add Custom Menu Shortcode
+function customMenu() {
+
+    $about   = get_field('about', 'option');
+    $notes   = get_field('notes', 'option');
+    $contact = get_field('contact', 'option');
+
+    echo '<ul>
+        <li>
+            <a href="' . get_site_url() . '/about/">About Arthur</a>
+            <p>'. $about .'</p>
+            <span>01</span>
+        </li>
+        <li>
+            <a href="' . get_site_url() . '/notes/">Notes</a>
+            <p>'. $notes .'</p>
+            <span>02</span>
+        </li>
+        <li>
+            <a href="' . get_site_url() . '/contact/">Contact</a>
+            <p>'. $contact .'</p>
+            <span>03</span>
+        </li>
+    </ul> ';
+
+}
+add_shortcode( 'customMenu', 'customMenu' );

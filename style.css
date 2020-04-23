@@ -495,7 +495,7 @@ h3 { font-size: 30px; width: 100%; }
 
 .custom-menu ul { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; list-style: none; margin: 0; padding: 0; }
 
-.custom-menu ul li { border-top: 1px solid #fff; display: inline-block; margin: 0 5px; max-width: 195px; padding: 10px 15px; }
+.custom-menu ul li { border-top: 1px solid #fff; display: inline-block; margin: 0 5px; max-width: 195px; padding: 10px 15px; width: 30%; }
 
 @media screen and (max-width: 580px) { .custom-menu ul li { padding: 10px 5px; } }
 

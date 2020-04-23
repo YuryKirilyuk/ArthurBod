@@ -68,23 +68,7 @@ get_header(); ?>
                 <div class="page-content">
 
                     <nav class="custom-menu">
-                        <ul>
-                            <li>
-                                <a href="<?php echo get_site_url(); ?>/about/">About Arthur</a>
-                                <p>Arthur Bod’s music can be defined simply as</p>
-                                <span>01</span>
-                            </li>
-                            <li>
-                                <a href="<?php echo get_site_url(); ?>/notes/">Notes</a>
-                                <p>A little music blog and song liner-notes</p>
-                                <span>02</span>
-                            </li>
-                            <li>
-                                <a href="<?php echo get_site_url(); ?>/contact/">Contact</a>
-                                <p>Just in case you wanna talk to me</p>
-                                <span>03</span>
-                            </li>
-                        </ul>
+                        <?php echo do_shortcode( '[customMenu]' ); ?>
                     </nav>
 
                 </div><!-- //.page-content -->
