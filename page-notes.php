@@ -52,7 +52,9 @@ get_header(); ?>
                         <?php if ($loop->have_posts()) : while( $loop->have_posts() ) : $loop->the_post(); ?>
 
                             <li>
+                                <div class="category"><?php the_category(', '); ?></div>
                                 <h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
+                                <div class="date"><?php the_date(); ?></div>
                                 <div class="entry-content">
                                     <a href="<?php echo get_permalink(); ?>"><?php the_excerpt(); ?></a>
                                 </div>
@@ -99,7 +101,9 @@ get_header(); ?>
 
                                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+                                    <div class="category"><?php the_category(', '); ?></div>
                                     <h3 class="article-title"><?php the_title(); ?></h3>
+                                    <div class="date"><?php the_date(); ?></div>
 
                                     <div class="featured-image">
                                         <?php if( has_post_thumbnail() ) { ?>
@@ -129,7 +133,9 @@ get_header(); ?>
                     <?php if ($loop->have_posts()) : while( $loop->have_posts() ) : $loop->the_post(); ?>
 
                         <li>
+                            <div class="category"><?php the_category(', '); ?></div>
                             <h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
+                            <div class="date"><?php the_date(); ?></div>
                             <div class="entry-content">
                                 <a href="<?php echo get_permalink(); ?>"><?php the_excerpt(); ?></a>
                             </div>

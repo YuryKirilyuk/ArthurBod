@@ -31,7 +31,9 @@ get_header();
                         <?php if ($loop->have_posts()) : while( $loop->have_posts() ) : $loop->the_post(); ?>
 
                             <li>
+                                <div class="category"><?php the_category(', '); ?></div>
                                 <h5><?php the_title(); ?></h5>
+                                <div class="date"><?php the_date(); ?></div>
                                 <div class="entry-content">
                                     <a href="<?php echo get_permalink(); ?>"><?php the_excerpt(); ?></a>
                                 </div>
